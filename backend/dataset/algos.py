@@ -398,6 +398,4 @@ def predict(text, model=settings.MODEL, tokenizer=settings.TOKENIZER):
     return predict_raw(model, tokenizer, f'in: {text} [end] out: ').split('[end] out: ')[1]
 
 def pr(txt):
-    algoss = algos(txt)
-    pr = predict(txt)
-    return pr
+    return predict(txt), {}
