@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row" *ngIf="data">
+    <div class="col-6 wrap">
+      <div class="number">
+        {{data.cnt_task_and_solve_complete_total}}
+      </div>
+      <div class="title">
+        УРА! Уже *Кол-во готовых предложений  в датасете*
+      </div>
+    </div>
+    <div class="col-6 wrap">
+      <div class="number">
+        {{data.cnt_task_without_solve}}
+      </div>
+      <div class="title">
+        РОБОТАТЬ! *Кол-во абзацов доступных к переводу*
+      </div>
+    </div>
+  </div>
+</div>

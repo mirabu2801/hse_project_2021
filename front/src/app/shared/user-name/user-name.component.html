@@ -1,0 +1,7 @@
+<span [style.color]="this.color?cl:'none'">
+  <ng-container *ngIf="prefix">
+    <span class="prefix">{{prefix}}</span>
+  </ng-container>
+  {{name}}
+</span>
+

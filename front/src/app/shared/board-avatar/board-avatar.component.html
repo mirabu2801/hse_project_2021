@@ -1,0 +1,32 @@
+<ng-container *ngIf="board.users.length === 1">
+  <div class="wrap-user-avatar">
+    <div class="my-board-img flex-center">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.759 1.5h6.482c.805 0 1.47 0 2.01.044.563.046 1.08.145 1.565.392a4 4 0 0 1 1.748 1.748c.247.485.346 1.002.392 1.564C21 5.79 21 6.454 21 7.258v10.497c0 .867 0 1.585-.049 2.136-.047.53-.15 1.144-.55 1.611a2.5 2.5 0 0 1-2.097.869c-.613-.048-1.121-.41-1.528-.75-.425-.355-.932-.863-1.545-1.476l-2.241-2.24a12.557 12.557 0 0 0-.651-.628c-.229-.194-.45-.194-.678 0-.153.13-.342.319-.65.627l-2.242 2.24c-.613.614-1.12 1.122-1.545 1.477-.407.34-.915.702-1.528.75a2.5 2.5 0 0 1-2.097-.869c-.4-.467-.503-1.082-.55-1.61C3 19.34 3 18.621 3 17.754V7.259c0-.805 0-1.47.044-2.01.046-.563.145-1.08.392-1.565a4 4 0 0 1 1.748-1.748c.485-.247 1.002-.346 1.564-.392C7.29 1.5 7.954 1.5 8.758 1.5z"></path></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h24v24H0z"></path></clipPath></defs></svg>
+    </div>
+  </div>
+</ng-container>
+
+
+<ng-container *ngIf="board.users.length === 2">
+  <ng-container *ngIf="targetUser">
+    <div class="wrap-user">
+      <user-avatar [userData]="targetUser"></user-avatar>
+    </div>
+  </ng-container>
+</ng-container>
+
+<ng-container *ngIf="board.users.length > 2">
+  <div class="wrap-user-avatar">
+    <!--  <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/55d2c6d9-9d70-40e2-b30b-773ea9b19cd6-profile_image-70x70.png" alt="">-->
+
+    <div class="user-avatar-template flex-center" [style.background]="cl">
+
+      <ng-container *ngIf="board.users.length > 2">
+        {{board.name[0]}}
+      </ng-container>
+    </div>
+  </div>
+</ng-container>
+
+
+

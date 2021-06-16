@@ -1,0 +1,45 @@
+
+.code {
+  height: 50px;
+  margin-bottom: 36px;
+}
+
+.ace-code {
+  height: inherit;
+  padding-bottom: 5.6px;
+  /* padding-bottom: 25px; */
+}
+
+.ace-code-wrap-select{
+  //height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  //background: red;
+  padding: 5.6px 0;
+  padding-top: 8px;
+
+  select {
+
+    margin-left: 10px;
+    border: 1px solid #e6e6e6;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+}
+
+.ace_editor {
+  background-color: #f6f6f6 !important;
+}
+
+.ace_gutter {
+  background: #ebebeb !important;
+  color: #333 !important;
+}
+
+/* .ace_gutter {
+    background: #ebebeb !important;
+    border-right: 1px solid rgb(159, 159, 159) !important;
+    color: rgb(136, 136, 136) !important;
+} */
+

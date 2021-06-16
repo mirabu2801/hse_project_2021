@@ -1,0 +1,93 @@
+.ez-calendar{
+  width: 100%;
+  margin-top: 10px;
+}
+.ez-calendar-header{
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.ez-calendar-header{
+  margin-bottom: 15px;
+  .name-month{
+    margin: 0 10px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  button {
+    outline: none;
+    border: none;
+    background: rgba(0,0,0,0);
+    transition: 0.1s;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      background: #F2F3F4;
+    }
+  }
+}
+
+.ez-calendar-label-day-week{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //padding: 15px;
+  .label-day-week{
+    font-size: 14px !important;
+    line-height: 16px !important;
+    color: rgb(113, 113, 113) !important;
+    margin-bottom: 6px !important;
+    font-weight: 600 !important;
+    width: 46px;
+  }
+}
+
+.ez-calendar-content{
+  //padding: 0 15px;
+}
+
+.ez-calendar-content-week{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ez-calendar-content-day{
+  //background: #fafafa;
+  border-radius: 50%;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  box-sizing: border-box;
+  &:hover{
+    border: 1.5px solid black;
+  }
+}
+
+.ez-calendar-content-day-disable{
+  cursor: default;
+  opacity: 0.4;
+  &:hover{
+    border: none;
+  }
+}
+
+.ez-calendar-main{
+  width: 329px;
+  margin: 0 auto;
+}
+
+.active{
+  background: black;
+  color: white;
+}

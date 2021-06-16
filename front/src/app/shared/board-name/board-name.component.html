@@ -1,0 +1,16 @@
+<ng-container *ngIf="board.users.length === 1">
+  <span>Личная доска</span>
+</ng-container>
+
+<ng-container *ngIf="board.users.length === 2">
+  <ng-container *ngIf="targetUser">
+    <app-user-name [user]="targetUser"></app-user-name>
+  </ng-container>
+</ng-container>
+
+<ng-container *ngIf="board.users.length > 2">
+  <span>{{board.name}}</span>
+</ng-container>
+
+
+

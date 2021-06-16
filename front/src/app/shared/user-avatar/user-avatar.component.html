@@ -1,0 +1,12 @@
+<div class="wrap-user-avatar">
+<!--  <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/55d2c6d9-9d70-40e2-b30b-773ea9b19cd6-profile_image-70x70.png" alt="">-->
+  <div class="user-avatar-template flex-center" [style.background]="cl">
+    <ng-container *ngIf="!userData.first_name">
+      {{userData.username[0]}}
+    </ng-container>
+    <ng-container *ngIf="userData.first_name && userData.first_name.length > 0">
+      {{userData.first_name[0]}}
+    </ng-container>
+  </div>
+</div>
+

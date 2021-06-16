@@ -1,0 +1,29 @@
+<div class="ez-calendar">
+  <div class="ez-calendar-header">
+    <div class="go-prev-month" (click)="goPrevMonth()">
+      <button><svg width="13" height="13" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"><path d="m13.7 16.29a1 1 0 1 1 -1.42 1.41l-8-8a1 1 0 0 1 0-1.41l8-8a1 1 0 1 1 1.42 1.41l-7.29 7.29z" fill-rule="evenodd"></path></svg></button>
+    </div>
+    <div class="name-month flex-center-y">
+      {{arrMonth[month]}} {{year}} г.
+    </div>
+    <div class="go-next-month" (click)="goNextMonth()">
+      <button><svg width="13" height="13" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg></button>
+    </div>
+  </div>
+
+  <div class="ez-calendar-main">
+    <div class="ez-calendar-label-day-week">
+      <div *ngFor="let name of arrDayOfWeek; let i = index" class="label-day-week flex-center">{{name}}</div>
+    </div>
+
+    <div class="ez-calendar-content">
+      <div *ngFor="let week of calendar" class="ez-calendar-content-week">
+        <div *ngFor="let day of week" class="ez-calendar-content-day flex-center"
+             [class.ez-calendar-content-day-disable]="day.disabled"
+             [class.active]="day.day === selectedDay && month === selectedMonth && year === selectedYear"
+             (click)="selectedDate(day.day)"
+        >{{day.day}}</div>
+      </div>
+    </div>
+  </div>
+</div>

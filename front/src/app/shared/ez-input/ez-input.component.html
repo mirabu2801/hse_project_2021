@@ -1,0 +1,7 @@
+<label class="ez-input" (click)="focusInput = true" (clickOutside)="focusInput = false">
+  <div class="ez-input-name" [class.ez-input-name-small]="target != '' || focusInput"
+       [class.ez-input-active]="focusInput">{{label}}</div>
+  <ng-content></ng-content>
+</label>
+
+<button (click)="f()">123 {{inp.nativeElement.focused}}</button>

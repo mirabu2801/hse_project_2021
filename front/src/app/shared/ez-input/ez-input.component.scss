@@ -1,0 +1,33 @@
+.ez-input{
+  background: #F2F3F4;
+  min-height: 56px;
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+
+  .ez-input-name{
+    pointer-events: none;
+    position: absolute;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    color: #9d9fa3;
+    line-height: 24px;
+    top: 14px;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+  }
+  .ez-input-name-small{
+    font-size: 13px;
+    line-height: 18px;
+    color: #71747a;
+    top: 8px;
+  }
+  .ez-input-active{
+    color: #7289DA !important;
+  }
+
+  &:hover{
+    background: #EAECEE;
+  }
+}

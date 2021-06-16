@@ -1,0 +1,18 @@
+.wrap-user-avatar{
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.user-avatar-template{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  //background-image: linear-gradient(138deg, rgb(183, 38, 255), rgb(70, 36, 242));
+  font-size: 100%;
+  color: white;
+  text-transform: uppercase;
+}

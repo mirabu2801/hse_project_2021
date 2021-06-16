@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 wrap-translator">
+      <div #translator class="translator">
+        <div class="x translator-header">
+          <div class="translator-header-left-name">
+            Я
+            <span class="second-color">
+              (Текст от 1ого лица)
+            </span>
+          </div>
+        </div>
+
+        <div class="x translator-text">
+          <div class="translator-input">
+            <textarea [(ngModel)]="inputText" autosize placeholder="Введите текст от первого лица" rows="4"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-trans">
+        <button class="second-button">Сменить пример</button>
+
+        <button class="accent-button" (click)="send()">Отправить пример</button>
+      </div>
+
+    </div>
+  </div>
+</div>
